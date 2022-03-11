@@ -16,7 +16,7 @@ $conn = getConnection();
 if($conn->connect_error){
     die("Ошибка: " . $conn->connect_error);
 }
-// SELECT posts.id, title, comments.id, comments.body FROM comments JOIN posts ON posts.id = comments.postId WHERE comments.body LIKE '%laudanti%'
+
 // Comments
 $jsonData_comments = file_get_contents(
     "https://jsonplaceholder.typicode.com/comments");
